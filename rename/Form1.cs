@@ -54,7 +54,6 @@ namespace rename
 
                 var ree=item.Remove(0, item.IndexOf('-')+1);
                 File.Move(item, textBox1.Text+ ree);
-                //
             }
         }
     }
