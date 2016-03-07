@@ -31,7 +31,7 @@ namespace rename
             string xx = String.Copy(textBox1.Text);
             xx=xx.Remove(textBox1.Text.LastIndexOf('\\'));//文字列削除 後方から\\
 
-            var za = xx.LastIndexOf('\\');
+            var za = xx.LastIndexOf('\\');//後方検索
             za++;
             var aa=textBox1.Text.Substring(za,(textBox1.Text.Length-1-za));
             var d = from z in hairetu where true == z.Contains(aa) select z;
